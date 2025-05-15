@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #e91e63;
+}
+
+.box {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.box.popular {
+  border-color: #e91e63;
+  z-index: 1;
+}
+
+.box.expanded {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  background: #e91e63;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.discount {
+  background: #ffcad4;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.price {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.box-content {
+  display: none;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.box.expanded .box-content {
+  display: block;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-row .shipping {
+  color: #1aaf5d; /* green for shipping */
+}
+
+.footer-row .total {
+  color: #000; /* black for total */
+}
