@@ -28,7 +28,7 @@ h1 {
   position: relative;
 }
 
-.box.popular {
+.box.popular .badge{
   border-color: #e91e63;
   z-index: 1;
 }
